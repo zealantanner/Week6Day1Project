@@ -76,7 +76,7 @@ $(storeItems).each(function(item){
 		$('#products').append(`
 
             <div class="product">
-                <span title="In stock" class="name">${this.name}</span>
+                <span class="name">${this.name}</span>
                 <span class="price">\$${this.price}</span>
                 <span class="details">${this.details}</span>
             </div>
