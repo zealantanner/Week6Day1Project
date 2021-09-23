@@ -69,13 +69,15 @@ const storeItems = [
 
 
 
+
+
 $(storeItems).each(function(item){
 	if (this.inStock){
 		$('#products').append(`
 
             <div class="product">
-                <span class="price">${this.name}</span>
-                <span class="name">\$${this.price}</span>
+                <span title="In stock" class="name">${this.name}</span>
+                <span class="price">\$${this.price}</span>
                 <span class="details">${this.details}</span>
             </div>
 
@@ -85,17 +87,15 @@ $(storeItems).each(function(item){
 
 
 
+// let button = document.getElementById('darkModeButton');
 
 
 
-
-let button = document.getElementById('darkModeButton');
-
-
-
-function toggleDark(a){button.addEventListener(a, function(){
-	$('body').toggleClass('dark');
-})}
+function toggleDark(a){document.getElementById('darkModeButton')
+    .addEventListener(a, function(){
+	    $('body').toggleClass('dark');
+    })
+}
 
 toggleDark('click'); //normal mode
 

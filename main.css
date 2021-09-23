@@ -12,7 +12,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, div, nav, article, ol, ul, li {
 }
 
 #content h1{
-    padding:10px;
+    padding: 10px;
 }
 
 #content .product, #content #darkModeButton{
@@ -20,18 +20,32 @@ html, body, h1, h2, h3, h4, h5, h6, p, div, nav, article, ol, ul, li {
     display: flex;
     border-radius: 7px;
     border: 2px solid black;
-    height: 50px;
 }
 
 .product {
     width: auto;
+    align-items: center;
+
 }
 
 .product span {
-    margin: auto 16px auto 16px;
-    flex-grow: 1;
+    padding: auto 0 auto 0;
     width: 0;
+}
+.product .name {
+    margin: 16px 0 16px 16px;
     min-width: 100px;
+    flex-grow: 2;
+}
+.product .price {
+    margin: 16px 0;
+    min-width: 50px;
+    flex-grow: 3;
+}
+.product .details {
+    margin: 16px 16px 16px 0;
+    min-width: 100px;
+    flex-grow: 6;
 }
 
 #content .product{
